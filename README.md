@@ -60,8 +60,11 @@ KD8CECのUV-K5用ファームウェア0.3vでは，DIGモードをONにすると
   
 D8CECのUV-K5用ファームウェア0.3vでFT8用の機能とPCによるCWキーイングを実現するにはUSBシリアルポート3個（UV-K5とのUSB-UARTブリッジ，GP-02-KitとのUSB-UARTブリッジ，シリアルポートを使ったCWキーイング）とUSB Audio(Audio Source)が必要です.  
 pico-sdkとtinyUSBを使ってプログラム開発を行えば，これも可能かと思います.  
-しかし，Arduino ide開発環境でArduino-picoをボードマネジャーとして使用して簡便に開発しようと考えた場合，現時点(November 2025)では制限がいくつかあります.  
-まず，USBスタックとして”Adafruit TinyUSB for Arduino"を使用することを考えたのですが，現時点ではUSB Audioはサポートされていません.  
+しかし，Arduino ide開発環境で簡便に開発しようと考えた場合，現時点(November 2025)では制限がいくつかあります.  
+
+という訳で  
+### Arduino-picoボードマネジャー版
+Arduino-picoをボードマネジャーとして使用し，USBスタックとして”Adafruit TinyUSB for Arduino"を使用することを考えたのですが，現時点ではUSB Audioはサポートされていません.  
 これについては，pschatzmannがUSB Audioへの拡張https://github.com/pschatzmann/Adafruit_TinyUSB_Arduino/tree/Audio を行なっており，これを使用すればUSB Audioが使えます.  
 上記githubをzipファイルでダウンロードし，Arduino ide開発環境でライブラリーとして追加すれば元のライブラリーに替わってこちらが使用できます.  
 しかし，まだ制限があります．元々の”Adafruit TinyUSB for Arduino"ライブラリーではUSBシリアル通信として2ポートまでの使用が可能です.  
@@ -71,9 +74,6 @@ pico-sdkとtinyUSBを使ってプログラム開発を行えば，これも可�
 これは，ライブラリーのAdafruit_USBD_CDC.cppの一部を少し書き換えればWindowsでも正しく認識されるようになります.  
 この部分だけを修正したライブラリーがhttps://github.com/je1rav/Adafruit_TinyUSB_Arduino/tree/je1rav-patch にあります.  
 
-  
-という訳で  
-### Arduino-picoボードマネジャー版
 Libraryマネージャーでzip形式でダウンロードしたhttps://github.com/je1rav/Adafruit_TinyUSB_Arduino/tree/je1rav-patch を加えてください.  
 このファームウェアでのモードは，　  
 ①FT8通信時：USBシリアル通信2ポート(UARTブリッジ UV-K5　＆　UARTブリッジ GPS) + USB Audio (Source&Sink)：青色LED，GPS受信完了時には緑点滅，送信時赤色   
@@ -88,7 +88,7 @@ Uf2バイナリーは””です.
 ”C-BOARD (DSP-Board) for UV-K5”とこの”AIOC”もどきの通信ファームウェアを一枚のボードで実現したい場合には、その都度uf2ファイルを書き込んで使用するのが簡単です.  
 
   
-##②のCWキーイングを行う場合のオリジナル”C-BOARD (DSP-Board) for UV-K5”への追加部分  
+### ②のCWキーイングを行う場合のオリジナル”C-BOARD (DSP-Board) for UV-K5”への追加部分  
 モード切り替えはGP8ピンをGNDに繋ぐことで可能.  
 実際にUV-K5で使用するには，UV-K5側でもDIGモードのON/OFFの切り替えを行う必要があります.  
 KD8CECのUV-K5用ファームウェア0.3vではCW通信時には,DIGモードをOFFにしてURAT用端子の電圧をモニターしてキー操作を検出します.  
