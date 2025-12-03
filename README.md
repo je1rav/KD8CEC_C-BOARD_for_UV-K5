@@ -27,11 +27,14 @@ FT8通信を行うには2つの方法が説明されています.
 CWキーイング用の抵抗とPCからのオーディオ出力をUV-K5に送るためのLPF回路が追加されています.  
 3.5mmジャックと2.5mmジャックの取り付け方法を少し変えた2ヴァージョンを作って見ました.  
 ①C-BOARD (DSP-Board) for UV-K5と似た構造のもの  
-PCBのKicadファイルは””です.  
-JLCPCB用ガーバーファイルは””です.  
+<img src="images/D-photo.jpg" width="150">  
+PCBのKicadファイルは”kicad/UVK5-C-board-D_kicad.zip”です.  
+JLCPCB用ガーバーファイルは”kicad/UVK5-C-board-D_garbar.zip”です.    
+  
 ②AOICと似た構造のもの  
-PCBのKicadファイルは””です.  
-JLCPCB用ガーバーファイルは””です.  
+<img src="images/E-photo.jpg" width="200">GPSは裏側につけます.  
+PCBのKicadファイルは”kicad/UVK5-C-board-E_kicad.zip”です.  
+JLCPCB用ガーバーファイルは”kicad/UVK5-C-board-E_garbar.zip”です.  
 詳細はBlog をご覧ください.  
 
 ### 必要部品  
