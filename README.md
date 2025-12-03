@@ -9,24 +9,23 @@ FT8通信を行うには2つの方法が説明されています.
 1つ目は，PCを使用してFT8通信を行う方法です.  
 ハードウエア的にはhttp://www.hamskey.com/2024/03/introducing-uv-k5-version-03c-added.html に記載されている"CAT communicationケーブル"（シリアル通信ケーブルに3.5mmのスピーカー出力端子をつけたもの）を作る必要があります.  
 これは，PCによるCWキーイングを可能する改造を行った自作も可能です．https://je1rav.blogspot.com/2025/11/uv-k5ft8cw.html  
-他にも”Ham Radio All-in-one-Cable; AIOC ”https://github.com/skuep/AIOC を使用する方法もあります.  
+他にも”Ham Radio All-in-one-Cable; AIOC” https://github.com/skuep/AIOC を使用する方法もあります.  
 受信だけなら”C-BOARD (DSP-Board) for UV-K5”を製作して使用することで，UV-K5単体で可能になります.  
 詳細はhttp://www.hamskey.com/2024/03/c-board-for-uv-k5.html に記載されています.  
 また，最近のOrganisasi Amatir Radio Indonesia (ORARI) (Indonesian Amateur Radio Organization)における”DIY APRS Tracker menggunakan HT UV-K5/K6”なる記事https://orari.or.id/diy-aprs-tracker-menggunakan-ht-uv-k5-k6/ でも紹介されており，KD8CECの作ったファームウェアもダウンロードできるようになっています.  
 
   
 この”C-BOARD (DSP-Board) for UV-K5”を製作し，通信用のファームウエアを作れば”AIOC”の代わりに通信インターフェイスになります.  
-ただし，PCからのオーディオ出力をUV-K5に送る機能はありません.  
-また，PCによるCWキーイングも行えるように改造することも可能性です(抵抗1個の追加が必要).  
+ただし，”AIOC”が持っているPCからのオーディオ出力をUV-K5に送る機能はありません.  
+また，KD8CECファームウェア上でPCによるCWキーイングも行えるように改造することも可能性です(抵抗1個の追加が必要).  
 ついでなので，PCからのオーディオ出力をUV-K5に送ることも計画しました.  
-
   
 と言う訳で新たに改造ボードを作ってみました.  
 
 ## ”C-BOARD (DSP-Board) for UV-K5”(mod)の製作  
 ![回路図](images/UVK5-C-board-circuit.jpg)  
-
-3.5mmジャックと2.5mmジャックの取り付け方法を少し変えた2ヴァージョンあります.  
+CWキーイング用の抵抗とPCからのオーディオ出力をUV-K5に送るためのLPF回路が追加されています.  
+3.5mmジャックと2.5mmジャックの取り付け方法を少し変えた2ヴァージョンを作って見ました.  
 ①C-BOARD (DSP-Board) for UV-K5と似た構造のもの  
 PCBのKicadファイルは””です.  
 JLCPCB用ガーバーファイルは””です.  
