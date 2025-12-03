@@ -22,8 +22,9 @@ FT8通信を行うには2つの方法が説明されています.
 
   
 と言う訳で新たに改造ボードを作ってみました.  
-##　”C-BOARD (DSP-Board) for UV-K5”(mod)の製作
-回路図
+
+## ”C-BOARD (DSP-Board) for UV-K5”(mod)の製作  
+![回路図](images/UVK5-C-board-circuit.jpg)  
 
 3.5mmジャックと2.5mmジャックの取り付け方法を少し変えた2ヴァージョンあります.  
 ①C-BOARD (DSP-Board) for UV-K5と似た構造のもの  
