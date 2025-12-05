@@ -82,8 +82,8 @@ Libraryマネージャーでzip形式でダウンロードしたhttps://github.c
 の2つです.  
 PCには，Source(マイクロホン)とSink（ヘッドフォン）が現れますが，Sink（ヘッドフォン）は何もしません.  
 タクトスイッチでモードを切り替えると，RP2040はリセットされます.  
-ソースコードは""です.  
-Uf2バイナリーは””です.  
+ソースコードは"UV-K5_Cable_RP2040_CDC.ino"です.  
+Uf2バイナリーは”UV-K5_Cable_RP2040_CDC.ino.uf2”です.  
 
   
 ”C-BOARD (DSP-Board) for UV-K5”とこの”AIOC”もどきの通信ファームウェアを一枚のボードで実現したい場合には、その都度uf2ファイルを書き込んで使用するのが簡単です.  
@@ -121,8 +121,8 @@ Arduino ide開発環境でArduino-picoをボードマネジャーとして使用
 の2つです.  
 PCには，Source(マイクロホン)とSink（ヘッドフォン）が現れます.  
 タクトスイッチでモードを切り替えると，RP2040はリセットされます.  
-ソースコードは""です.  
-Uf2バイナリーは””です.  
+ソースコードは"UV-K5_Cable_RP2040_IJV-tone.ino"です.  
+Uf2バイナリーは”UV-K5_Cable_RP2040_IJV-tone.ino.uf2”です.  
 
 
 このUSB Audioの拡張版TinyUSBスタックで受信（USB Audio Source）は問題なく作動したのですが，送信（USB Audio Sink）をうまく作動させることができませんでした.  
@@ -154,8 +154,8 @@ Firmware-IJVのDSBモードでFT8用の機能とPCによるCWキーイングを�
 の2つです.  
 PCには，Source(マイクロホン)とSink（ヘッドフォン）が現れます.  
 タクトスイッチでモードを切り替えると，RP2040はリセットされます.  
-ソースコードは""です.  
-Uf2バイナリーは””です.  
+ソースコードは"UV-K5_Cable_RP2040_IJV_mbed"内に”PluggableUSBAudio.h”と”USBAudio.cpp”と共にあります.  
+Uf2バイナリーは”UV-K5_Cable_RP2040_IJV_mbed.ino.uf2”です.  
 "Adafruit NeoPixel Library"のversionが新しすぎるとコンパイルエラーが出ます(1.15.0までは動きます).   
 
 この場合には音響通信に関しては送受信で大きな問題は生じませんでしたので，送信時にはPCからの音響データをそのままPWMで出力しています.  
