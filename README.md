@@ -35,7 +35,9 @@ JLCPCB用ガーバーファイルは”kicad/UVK5-C-board-D_garbar.zip”です.
 <img src="images/E-photo.jpg" width="200">GPSは裏側につけます.  
 PCBのKicadファイルは”kicad/UVK5-C-board-E_kicad.zip”です.  
 JLCPCB用ガーバーファイルは”kicad/UVK5-C-board-E_garbar.zip”です.  
+
 詳細はBlog をご覧ください.  
+もちろん，KD8CECのc-board for UV-K5ファームウェアも作動します.  
 
 ### 必要部品  
 	RP2040 Zero 1個  
