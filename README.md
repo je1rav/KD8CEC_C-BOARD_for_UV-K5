@@ -36,7 +36,7 @@ JLCPCB用ガーバーファイルは”kicad/UVK5-C-board-D_garbar.zip”です.
 PCBのKicadファイルは”kicad/UVK5-C-board-E_kicad.zip”です.  
 JLCPCB用ガーバーファイルは”kicad/UVK5-C-board-E_garbar.zip”です.  
 
-詳細はBlog をご覧ください.  
+詳細はBlog https://je1rav.blogspot.com/2025/12/c-board-dsp-board-for-uv-k5.html をご覧ください.  
 もちろん，KD8CECのc-board for UV-K5ファームウェアも作動します.  
 
 ### 必要部品  
@@ -55,6 +55,8 @@ JLCPCB用ガーバーファイルは”kicad/UVK5-C-board-E_garbar.zip”です.
 	積層コンデンサー0.1uF 2個 （Firmware-IJVでのFT8送信用）  
 	積層コンデンサー1uF 1個 （Firmware-IJVでのFT8送信用）  
 
+  
+  
 ## 通信用ファームウェア(for KD8CEC ver0.3v)
 KD8CECのUV-K5用ファームウェア0.3vでは，DIGモードをONにすると3.5mmオーディオジャックの根本のピンはシリアル通信用になり，DIGモードをOFFにした場合には基本的にPTT用となります.  
 このとき，GND接続で送信になり，CWモードでは，このピンの電圧を検出して外部キーイングを行なっています.  
@@ -66,7 +68,7 @@ pico-sdkとtinyUSBを使ってプログラム開発を行えば，これも可�
 しかし，Arduino ide開発環境で簡便に開発しようと考えた場合，現時点(November 2025)では制限がいくつかありますので，タクトスイッチで作動モードを切り替えることにしました.  
 
 という訳で  
-### Arduino-picoボードマネジャー版
+### Arduino-picoボードマネジャー版 (オリジナルの"C-BOARD (DSP-Board) for UV-K5"でも作動します)
 Arduino-picoをボードマネジャーとして使用し，USBスタックとして”Adafruit TinyUSB for Arduino"を使用することを考えたのですが，現時点では正式版ではUSB Audioはサポートされていません.  
 これについては，pschatzmannがUSB Audioへの拡張https://github.com/pschatzmann/Adafruit_TinyUSB_Arduino/tree/Audio を行なっており，これを使用すればUSB Audioが使えます.  
 上記githubをzipファイルでダウンロードし，Arduino ide開発環境でライブラリーとして追加すれば元のライブラリーに替わってこちらが使用できます.  
