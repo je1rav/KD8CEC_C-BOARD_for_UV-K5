@@ -68,7 +68,7 @@ pico-sdkとtinyUSBを使ってプログラム開発を行えば，これも可�
 しかし，Arduino ide開発環境で簡便に開発しようと考えた場合，現時点(November 2025)では制限がいくつかありますので，タクトスイッチで作動モードを切り替えることにしました.  
 
 という訳で  
-### Arduino-picoボードマネジャー版 (オリジナルの"C-BOARD (DSP-Board) for UV-K5"でも作動します)
+### Arduino-picoボードマネジャー版 (オリジナルの"C-BOARD (DSP-Board) for UV-K5"も作動します)
 Arduino-picoをボードマネジャーとして使用し，USBスタックとして”Adafruit TinyUSB for Arduino"を使用することを考えたのですが，現時点では正式版ではUSB Audioはサポートされていません.  
 これについては，pschatzmannがUSB Audioへの拡張https://github.com/pschatzmann/Adafruit_TinyUSB_Arduino/tree/Audio を行なっており，これを使用すればUSB Audioが使えます.  
 上記githubをzipファイルでダウンロードし，Arduino ide開発環境でライブラリーとして追加すれば元のライブラリーに替わってこちらが使用できます.  
