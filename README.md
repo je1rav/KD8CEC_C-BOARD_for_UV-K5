@@ -150,7 +150,7 @@ FLDIGやDigitalSoundCWなどを使用する場合，アプリ内でこの設定�
 
 
 ### ArduinoCore-mbedボードマネジャー版
-Firmware-IJVのDSBモードでFT8用の機能とPCによるCWキーイングを実現するにはUSBシリアルポートとUSB Audio(Audio Source　&　sink)が必要です.  
+Firmware-IJVのDSBモードでFT8用の機能とPCによるCWキーイングを実現するにはUSBシリアルポートとUSB Audio(Audio Source & sink)が必要です.  
 ArduinoCore-mbedではこれをサポートしてるので，一応そのまま使えます.  
 ただ，オリジナルのPluggableUSBAudioはWindowsでは正しく認識しません(MacOSやLinuxでは大丈夫).  
 Windowsで使う場合には少し改変した”PluggableUSBAudio.h”と”USBAudio.cpp”が必要です.  
