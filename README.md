@@ -81,7 +81,7 @@ Arduino-picoをボードマネジャーとして使用し，USBスタックと�
 Libraryマネージャーでzip形式でダウンロードしたhttps://github.com/je1rav/Adafruit_TinyUSB_Arduino/tree/je1rav-patch を加えてください.  
 
 このファームウェアでのモードは，　  
-①FT8通信時：USBシリアル通信2ポート(UARTブリッジ UV-K5　＆　UARTブリッジ GPS) + USB Audio (Source&Sink)：青色LED，GPS受信完了時には緑点滅     
+①FT8通信時：USBシリアル通信2ポート(UARTブリッジ UV-K5 ＆ UARTブリッジ GPS) + USB Audio (Source&Sink)：青色LED，GPS受信完了時には緑点滅     
 ②CW通信時：USBシリアル通信1ポート(CWキーイング) + USB Audio (Source&Sink)：緑色LED，送信時赤色     
 の2つです.  
 PCには，Source(マイクロホン)とSink（ヘッドフォン）が現れますが，Sink（ヘッドフォン）は何もしません.  
@@ -121,7 +121,7 @@ Arduino ide開発環境でArduino-picoをボードマネジャーとして使用
 この部分だけを修正したライブラリーがhttps://github.com/je1rav/Adafruit_TinyUSB_Arduino/tree/je1rav-patch にあります.  
 
 このファームウェアでのモードは，　  
-①FT8通信時：USBシリアル通信1ポート(UARTブリッジ GPS) + USB Audio (Source & Sink)：青色LED，GPS受信完了時には緑点滅，送信時赤色     
+①FT8通信時：USBシリアル通信1ポート(UARTブリッジ GPS) + USB Audio (Source&Sink)：青色LED，GPS受信完了時には緑点滅，送信時赤色     
 ②CW通信時：USBシリアル通信1ポート(CWキーイング) + USB Audio (Source)：緑色LED，送信時赤色     
 の2つです.  
 FT8モード時にPCには，Source(マイクロホン)とSink（ヘッドフォン）が現れます.  
