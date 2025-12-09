@@ -31,7 +31,7 @@ CWキーイング用の抵抗とPCからのオーディオ出力をUV-K5に送�
 PCBのKicadファイルは”kicad/UVK5-C-board-D_kicad.zip”です.  
 JLCPCB用ガーバーファイルは”kicad/UVK5-C-board-D_garbar.zip”です.    
   
-②AOICと似た構造のもの  
+②AIOCと似た構造のもの  
 <img src="images/E-photo.jpg" width="200">GPSは裏側につけます.  
 PCBのKicadファイルは”kicad/UVK5-C-board-E_kicad.zip”です.  
 JLCPCB用ガーバーファイルは”kicad/UVK5-C-board-E_garbar.zip”です.  
